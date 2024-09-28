@@ -55,7 +55,7 @@ function App() {
 
     const fetchTransactions = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/transactions?month=${selectedMonth}`);
+            const response = await axios.get(`https://backend-roxiler-systems-internship-drive.onrender.com/transactions?month=${selectedMonth}`);
             setTransactions(response.data);
 
             // Calculate statistics
